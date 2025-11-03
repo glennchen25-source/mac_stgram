@@ -1,0 +1,12 @@
+numpy>=1.21,<2.0
+visdom==0.1.8.9
+joblib>=1.2,<2.0
+librosa>=0.8,<0.10          # 先与旧代码兼容；需要再升到 0.10
+tqdm>=4.48
+matplotlib>=3.5,<3.8        # 避免 3.9 某些弃用接口问题
+scikit-learn>=1.0,<1.4      # 从 0.22 跳到 1.0 足够；避免 1.4+ 的额外 API 变更
+pyyaml>=5.4
+torch==2.4.*                # 支持 MPS，性能/兼容较好
+torchvision==0.19.*         # 与 torch 2.4 对齐
+torchaudio==2.4.*           # 与 torch 2.4 对齐
+tensorboard>=2.1
